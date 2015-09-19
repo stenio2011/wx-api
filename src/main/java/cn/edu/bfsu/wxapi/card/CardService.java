@@ -1,7 +1,8 @@
 package cn.edu.bfsu.wxapi.card;
 
-import java.util.List;
 import java.util.Map;
+
+import cn.edu.bfsu.wxapi.DataGridResult;
 
 public interface CardService {
 
@@ -24,17 +25,6 @@ public interface CardService {
 	 * 		   "balance" 余额
 	 */
 	public Map<String, String> getBalance(String id);
-
-	
-	/**
-	 * 获取某年某月交易流水数量
-	 * 
-	 * @param id
-	 * @param year
-	 * @param month
-	 * @return
-	 */
-	public int getResourceInfoSize(String id, String year, String month);
 	
 	/**
 	 * 交易流水
@@ -46,5 +36,5 @@ public interface CardService {
 	 * @param pageSize
 	 * @return
 	 */
-	public List<ResourceInfo> getResourceInfo(String id, String year, String month, String pageNo, String pageSize);
+	DataGridResult<ResourceInfo> getResourceInfo(String id, String year, String month, String pageNo, String pageSize);
 }
