@@ -13,19 +13,17 @@ public interface CardService {
 	 *            用户ID
 	 * @return 用户信息
 	 */
-	public UserInfo getUserInfo(String id);
+	UserInfo getUserInfo(String id);
 
 	/**
 	 * 获取帐号余额
 	 * 
 	 * @param id
 	 *            用户ID
-	 * @return "id" 用户ID
-	 * 		   "name" 用户姓名
-	 * 		   "balance" 余额
+	 * @return "id" 用户ID "name" 用户姓名 "balance" 余额
 	 */
-	public Map<String, String> getBalance(String id);
-	
+	Map<String, Object> getBalance(String id);
+
 	/**
 	 * 交易流水
 	 * 
