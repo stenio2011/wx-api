@@ -13,4 +13,6 @@ public interface StudyService {
 	 * @return List<ScoreInfo>
 	 */
 	List<ScoreInfo> listScore(String id, String year, String term);
+
+	List<CourseInfo> listCourse(String id, String year, String term);
 }
