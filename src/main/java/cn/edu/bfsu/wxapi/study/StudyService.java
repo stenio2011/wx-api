@@ -15,7 +15,7 @@ public interface StudyService {
 	List<ScoreInfo> listScore(String id, String year, String term);
 
 	/**
-	 * 获取成绩列表
+	 * 获取课程列表
 	 * 
 	 * @param id 学号
 	 * @param year 年份
