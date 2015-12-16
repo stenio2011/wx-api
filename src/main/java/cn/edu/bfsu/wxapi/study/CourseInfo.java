@@ -34,12 +34,17 @@ public class CourseInfo implements Serializable{
 	/**
 	 * 星期几
 	 */
-	private String xqj;
+	private String day;
 	
 	/**
-	 * 节次
+	 * 开始时间
 	 */
-	private String jc;
+	private String KSSJ;
+	
+	/**
+	 * 结束时间
+	 */
+	private String JSSJ;
 	
 	/**
 	 * 教室名称
@@ -86,20 +91,12 @@ public class CourseInfo implements Serializable{
 		this.zcfb = zcfb;
 	}
 
-	public String getXqj() {
-		return xqj;
+	public String getDay() {
+		return day;
 	}
 
-	public void setXqj(String xqj) {
-		this.xqj = xqj;
-	}
-
-	public String getJc() {
-		return jc;
-	}
-
-	public void setJc(String jc) {
-		this.jc = jc;
+	public void setDay(String day) {
+		this.day = day;
 	}
 
 	public String getJsmc() {
@@ -109,6 +106,21 @@ public class CourseInfo implements Serializable{
 	public void setJsmc(String jsmc) {
 		this.jsmc = jsmc;
 	}
-	
+
+	public String getKSSJ() {
+		return KSSJ;
+	}
+
+	public void setKSSJ(String kSSJ) {
+		KSSJ = kSSJ;
+	}
+
+	public String getJSSJ() {
+		return JSSJ;
+	}
+
+	public void setJSSJ(String jSSJ) {
+		JSSJ = jSSJ;
+	}
 	
 }
